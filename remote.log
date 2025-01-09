@@ -1,1 +1,2 @@
 0217cd31-5440-44b0-ac72-7e9c5048e320 autoenable=true bucket=cneuromod.anat.pycortex chunk=1GiB datacenter=US encryption=none host=s3.unf-montreal.ca name=s3.cneuromod.anat.pycortex port=443 protocol=https requeststyle=path storageclass=STANDARD type=S3 timestamp=1732309768.849094961s
+0217cd31-5440-44b0-ac72-7e9c5048e320 autoenable=true bucket=cneuromod.anat.pycortex chunk=1GiB datacenter=US encryption=none host=s3.unf-montreal.ca name=s3.cneuromod.anat.pycortex port=443 protocol=https requeststyle=path storageclass=STANDARD type=S3 timestamp=1734558032.73136532s
