@@ -118,9 +118,9 @@ Load your results map (volume)
 # specify subject number
 s = '01'
 # specify path to the volume you want to visualize
-data_dir = f'path/to/cneuromod-things/glmsingle/sub-{s}/glmsingle/output'
+data_dir = f'path/to/cneuromod-things/THINGS/glmsingle/sub-{s}/glmsingle/output'
 # Load the functional volume (here ref image as placeholder)
-vol = f'{data_dir}/sub-{s}_task-things_space-T1w_model-fitHrfGLMdenoiseRR_stats-noiseCeilings_statmap.nii.gz'
+vol = f'{data_dir}/sub-{s}_task-things_space-T1w_model-fitHrfGLMdenoiseRR_stat-noiseCeilings_statmap.nii.gz'
 # Convert volume to array and swap its axes
 vol_arr = np.swapaxes(nib.load(vol).get_fdata(), 0, -1)
 
@@ -189,8 +189,8 @@ import matplotlib.pyplot as plt
 Follow the same steps as above to project your volume of results onto a cortical surface.
 '''
 s = '01'
-data_dir = f'path/to/cneuromod-things/glmsingle/sub-{s}/glmsingle/output'
-vol = f'{data_dir}/sub-{s}_task-things_space-T1w_model-fitHrfGLMdenoiseRR_stats-noiseCeilings_statmap.nii.gz'
+data_dir = f'path/to/cneuromod-things/THINGS/glmsingle/sub-{s}/glmsingle/output'
+vol = f'{data_dir}/sub-{s}_task-things_space-T1w_model-fitHrfGLMdenoiseRR_stat-noiseCeilings_statmap.nii.gz'
 vol_arr = np.swapaxes(nib.load(vol).get_fdata(), 0, -1)
 vol_thresh = 0.0
 vol_arr[vol_arr < vol_thresh] = np.nan
